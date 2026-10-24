@@ -41,6 +41,16 @@ ul.tick li:before{content:"✓ ";color:var(--accent);font-weight:bold}
 .dark p{font-style:italic;font-size:1.4rem;margin:0}
 footer{text-align:center;padding:24px;font-family:system-ui,sans-serif;font-size:.85rem}
 a{color:var(--accent)}
+.raffle{background:linear-gradient(135deg,#dcebd3,#f5ecd2);border-radius:26px;padding:30px 20px;text-align:center;position:relative;overflow:hidden;box-shadow:0 6px 18px rgba(74,124,89,.12)}
+.raffle:before,.raffle:after{content:"🌿";position:absolute;font-size:4rem;opacity:.15}
+.raffle:before{top:6px;left:12px;transform:rotate(-30deg)}
+.raffle:after{bottom:4px;right:12px;transform:rotate(140deg)}
+.raffle h2{border-bottom:4px solid #fff;margin-bottom:.3em}
+.ticket{position:relative;background:#fffdf6;border:2px dashed var(--accent);border-radius:20px;padding:22px;max-width:520px;margin:18px auto;font-family:system-ui,sans-serif}
+.ticket .prize{font-family:Georgia,serif;font-size:1.5rem;color:var(--ink);margin:6px 0}
+.ticket .row{display:flex;justify-content:space-between;gap:10px;flex-wrap:wrap;margin-top:14px}
+.ticket .pill{background:var(--card);border-radius:30px;padding:6px 16px;font-size:.9rem;color:var(--ink)}
+.raffle ol{text-align:left;max-width:420px;margin:12px auto;padding-left:22px;font-family:system-ui,sans-serif;font-size:.95rem}
 </style>
 </head>
 <body>
@@ -82,7 +92,7 @@ a{color:var(--accent)}
   <h2 style="margin-top:36px">Bakes &amp; Snacks</h2>
   <div class="grid drinks">
     <div class="card"><h3>🍕 Mini Pizza</h3><p class="small">Per slice</p><b class="sans small">R9</b></div>
-    <div class="card"><h3>🥧 Mini Pies</h3><p class="small">Pack of 10: R20<br>Pack of 15: R30</p></div>
+    <div class="card"><h3>🥧 Mini Pies</h3><p class="small">Pack of 10: R15<br>Pack of 15: R30</p></div>
     <div class="card"><h3>🌭 Corn Dogs</h3><p class="small">Each</p><b class="sans small">R18</b></div>
   </div>
 
@@ -109,7 +119,31 @@ a{color:var(--accent)}
 </section>
 
 <div class="dark"><p>More than just drinks and products… it’s a lifestyle.</p></div>
+<!-- RAFFLE -->
+<section id="raffle">
+  <div class="raffle">
+    <h2>🎟️ Win with The Herbal Edit!</h2>
+    <p>Enter our raffle for a chance to win something special.</p>
 
+    <div class="ticket">
+      <div class="sub">Grand prize</div>
+      <div class="prize">🎁 YOUR PRIZE HERE</div>
+      <p class="small">A short description of the prize, e.g. a wellness hamper with herbal drinks and soaps.</p>
+      <div class="row">
+        <span class="pill">🎟️ Ticket: R00</span>
+        <span class="pill">📅 Draw date: 00 Month 2026</span>
+      </div>
+    </div>
+
+    <ol>
+      <li>Buy a raffle ticket at Eduvos Midrand Campus.</li>
+      <li>Keep your ticket number safe.</li>
+      <li>We announce the winner on Instagram @the.herbal.edit.</li>
+    </ol>
+
+    <a class="btn" href="mailto:theherbaledit10@gmail.com?subject=Raffle%20entry">Enter the raffle</a>
+  </div>
+</section>
 <!-- CONTACT -->
 <section id="contact">
   <h2>Contact Us</h2>
