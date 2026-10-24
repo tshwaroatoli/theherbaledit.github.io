@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>The Herbal Edit</title>
+<style>
+:root{color-scheme:light;--bg:#fcfaf4;--card:#edf3e7;--ink:#2f5d3f;--text:#3a4a3f;--accent:#5f8f67;--dark:#4a7c59;--onDark:#ffffff;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:70px}
+body{margin:0;background:var(--bg);color:var(--text);font-family:Georgia,'Times New Roman',serif;line-height:1.6}
+.sans{font-family:system-ui,-apple-system,'Segoe UI',sans-serif}
+header{position:sticky;top:env(safe-area-inset-top,0px);z-index:5;background:var(--bg);display:flex;align-items:center;justify-content:space-between;padding:10px 20px;border-bottom:1px solid var(--card)}
+.brand{display:flex;align-items:center;gap:10px;color:var(--ink);font-size:1.25rem;font-weight:bold;text-decoration:none}
+.logo{width:42px;height:42px;border:2px solid var(--ink);border-radius:50%;display:grid;place-items:center;font-size:.8rem;line-height:.9;font-weight:bold;color:var(--ink);text-align:center}
+nav{display:flex;gap:14px;flex-wrap:wrap;font-family:system-ui,sans-serif;font-size:.8rem;letter-spacing:.08em;text-transform:uppercase}
+nav a{color:var(--text);text-decoration:none}
+.hero{position:relative;overflow:hidden;text-align:center;padding:70px 20px;background:radial-gradient(circle at 85% 10%,#d5e5cc 0,transparent 45%),radial-gradient(circle at 10% 90%,#f6ecd0 0,transparent 40%),var(--bg)}
+.hero:before,.hero:after{content:"🌿";position:absolute;font-size:5rem;opacity:.18}
+.hero:before{top:10px;right:16px;transform:rotate(25deg)}
+.hero:after{bottom:6px;left:12px;transform:rotate(-120deg)}
+.hero h1{font-size:clamp(2.2rem,8vw,4rem);color:var(--ink);margin:.2em 0}
+.sub{font-family:system-ui,sans-serif;letter-spacing:.2em;font-size:.75rem;text-transform:uppercase;color:var(--accent)}
+.tag{font-style:italic;font-size:1.4rem;color:var(--ink)}
+.btn{display:inline-block;margin-top:14px;padding:12px 26px;background:var(--dark);color:var(--onDark);border-radius:30px;text-decoration:none;font-family:system-ui,sans-serif}
+section{max-width:960px;margin:auto;padding:46px 20px}
+h2{color:var(--ink);font-size:1.7rem;margin:0 0 .6em;display:inline-block;border-bottom:4px solid #cfe0c5}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:16px}
+.card{background:var(--card);border:1px solid #dde8d5;border-radius:22px;padding:22px;box-shadow:0 6px 18px rgba(74,124,89,.10);transition:transform .2s}
+.card:hover{transform:translateY(-4px)}
+.card h3{margin:.2em 0;color:var(--ink)}
+.small{font-size:.9rem}
+.bottle{width:46px;height:96px;margin:0 auto 10px;border-radius:10px 10px 14px 14px;position:relative}
+.bottle:before{content:"";position:absolute;top:-12px;left:10px;width:26px;height:14px;background:#222;border-radius:4px}
+.bottle:after{content:"THE";position:absolute;top:34px;left:7px;width:32px;padding:6px 0;background:#fffdf6;color:#1f3d2b;font:bold 9px Georgia,serif;text-align:center}
+.drinks .card{text-align:center}
+ul.tick{list-style:none;padding:0;margin:0}
+ul.tick li:before{content:"✓ ";color:var(--accent);font-weight:bold}
+.dark{background:linear-gradient(135deg,#dcebd3,#f5ecd2);color:var(--ink);text-align:center;padding:50px 20px}
+.dark p{font-style:italic;font-size:1.4rem;margin:0}
+footer{text-align:center;padding:24px;font-family:system-ui,sans-serif;font-size:.85rem}
+a{color:var(--accent)}
+</style>
+</head>
+<body>
+
+<!-- HEADER: change the name here -->
+<header>
+  <a class="brand" href="#top"><span class="logo">T<br>H<br>E</span>The Herbal Edit</a>
+  <nav><a href="#about">About</a><a href="#products">Products</a><a href="#why">Why us</a><a href="#contact">Contact</a></nav>
+</header>
+
+<!-- HERO -->
+<div class="hero" id="top">
+  <div class="sub">Herbal drinks · Wellness hampers · Natural care</div>
+  <h1>The Herbal Edit</h1>
+  <div class="tag">Goodness from nature, for your everyday.</div>
+  <a class="btn" href="#contact">Order now</a>
+</div>
+
+<!-- ABOUT -->
+<section id="about">
+  <h2>About Us</h2>
+  <p>The Herbal Edit is a small, student-run business that creates natural, affordable herbal drinks, wellness hampers and tasty bakes and snacks. We believe in the power of nature to support your health, boost your energy and help you feel your best, inside and out.</p>
+  <div class="grid">
+    <div class="card"><h3>Our Mission</h3><p class="small">To provide natural, high-quality herbal drinks and wellness products that are affordable, accessible and beneficial for our customers’ health and well-being.</p></div>
+    <div class="card"><h3>Our Vision</h3><p class="small">To become a trusted and recognised herbal wellness brand that inspires healthier lifestyles, supports sustainable practices and makes natural care part of everyday life.</p></div>
+  </div>
+</section>
+
+<!-- PRODUCTS: copy one <div class="card"> block to add a drink; change the colour in style="background:..." -->
+<section id="products">
+  <h2>Herbal Drinks <span class="small">(250 ml)</span></h2>
+  <div class="grid drinks">
+    <div class="card"><div class="bottle" style="background:#7a1630"></div><h3>The Ruby</h3><p class="small">Hibiscus, lemon, mint</p><b class="sans small">R15</b></div>
+    <div class="card"><div class="bottle" style="background:#f2b01e"></div><h3>The Golden</h3><p class="small">Turmeric, ginger, lemon, honey</p><b class="sans small">R15</b></div>
+    <div class="card"><div class="bottle" style="background:#9cb23a"></div><h3>The Tropical</h3><p class="small">Moringa, pineapple, mint, lemon</p><b class="sans small">R15</b></div>
+    <div class="card"><div class="bottle" style="background:#f4d78a"></div><h3>Ginger Lemon Refresher</h3><p class="small">Ginger and lemon</p><b class="sans small">R15</b></div>
+  </div>
+
+  <h2 style="margin-top:36px">Bakes &amp; Snacks</h2>
+  <div class="grid drinks">
+    <div class="card"><h3>🍕 Mini Pizza</h3><p class="small">Per slice</p><b class="sans small">R8</b></div>
+    <div class="card"><h3>🥧 Mini Pies</h3><p class="small">Pack of 5: R10<br>Pack of 12: R25</p></div>
+    <div class="card"><h3>🌭 Corn Dogs</h3><p class="small">Each</p><b class="sans small">R18</b></div>
+  </div>
+
+  <h2 style="margin-top:36px">Wellness Hampers</h2>
+  <p class="sans"><b>Hamper: R80</b> · Individual herbal items: R20 each</p>
+  <div class="grid">
+    <div class="card"><h3>🧼 Herbal Soaps</h3></div>
+    <div class="card"><h3>🛁 Bath Salts</h3></div>
+    <div class="card"><h3>✨ Scrubs</h3></div>
+    <div class="card"><h3>🌿 Washes &amp; Oils</h3></div>
+    <div class="card"><h3>🦶 Foot Soaks</h3></div>
+  </div>
+  <p class="small">Natural ingredients · Affordable prices · Reusable packaging · Great for gifting</p>
+</section>
+
+<!-- TARGET MARKET + WHY -->
+<section id="why">
+  <div class="grid">
+    <div class="card"><h3>Who we’re for</h3>
+      <ul class="tick small"><li>Students and young adults (16–30)</li><li>Health-conscious individuals</li><li>Gift buyers (birthdays, holidays, events)</li><li>Local community and nearby businesses</li></ul></div>
+    <div class="card"><h3>Why choose us?</h3>
+      <ul class="tick small"><li>100% natural ingredients</li><li>Non-alcoholic and refreshing</li><li>Promotes wellness and hygiene</li><li>Reusable, eco-friendly packaging</li><li>Excellent customer service</li><li>Affordable and high-quality</li></ul></div>
+  </div>
+</section>
+
+<div class="dark"><p>More than just drinks and products… it’s a lifestyle.</p></div>
+
+<!-- CONTACT -->
+<section id="contact">
+  <h2>Contact Us</h2>
+  <div class="card sans">
+    <p>📞 <a href="tel:+27500543719">050 054 3719</a></p>
+    <p>✉️ <a href="mailto:theherbaledit10@gmail.com">theherbaledit10@gmail.com</a></p>
+    <p>📷 <a href="https://instagram.com/the.herbal.edit">@the.herbal.edit</a></p>
+    <p>📍 Eduvos Midrand Campus</p>
+    <p style="font-family:Georgia,serif;font-style:italic">Stay connected for updates, new products and special offers!</p>
+  </div>
+</section>
+
+<footer>© The Herbal Edit · Herbal drinks · Wellness hampers · Natural care</footer>
+</body>
+</html>
